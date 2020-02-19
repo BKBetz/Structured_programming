@@ -73,8 +73,6 @@ def game_1():
                                 feedback['white'] += 1
                     lives -= 1
 
-                    # shuffle the code so that the player doesn't know which feedback is for which number
-
                     print(feedback)
 
     if lives == 0:
