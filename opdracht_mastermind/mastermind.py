@@ -93,4 +93,13 @@ def game_4():
 
 """
 bronvermeldingen:
+
+- gebruik om de 2 strategieën te gebruiken:
+Kooi, B. (z.d.). Yet at another mastermind strategy. Geraadpleegd op 12 februari 2020, van http://www.philos.rug.nl/~barteld/master.pdf
+
+- gebruikt om voor mezelf te herhalen hoe dictionaries werken:
+Python Dictionaries. (z.d.). Geraadpleegd op 10 februari 2020, van https://www.w3schools.com/python/python_dictionaries.asp
+
+- gebruikt om te leren hoe de join functie werkt:
+Striver (z.d.). Join() function in Python. Geraadpleegd op 10 februari 2020, van https://www.geeksforgeeks.org/join-function-python/
 """
