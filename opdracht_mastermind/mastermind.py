@@ -54,21 +54,27 @@ def game_1():
                     exit()
 
                 else:
-                    feedback = []
+                    feedback = {'black': 0, 'white': 0}
+                    lst = []
                     for i in range(0, len(guess)):
                         if guess[i] == code[i]:
-                            feedback.append('B')
-                        # since it's an person that tries to guess the code.. this makes it more fun :)
-                        elif guess[i] in code:
-                            feedback.append('W')
+                            feedback['black'] += 1
+                            lst.append(guess[i])
 
-                        else:
-                            feedback.append('X')
+                    for i in range(0, 4):
+                        if guess[i] in code:
+
+                            num = guess[i]
+                            guess_count = guess.count(num)
+                            answer_count = code.count(num)
+
+                            if lst.count(guess[i]) < guess_count and lst.count(guess[i]) < answer_count:
+                                lst.append(num)
+                                feedback['white'] += 1
                     lives -= 1
 
                     # shuffle the code so that the player doesn't know which feedback is for which number
-                    random.shuffle(feedback)
-                    feedback = "-".join(feedback)
+
                     print(feedback)
 
     if lives == 0:
@@ -90,6 +96,8 @@ def game_4():
     all_answers = create_all_answers()
     self_made(all_answers)
 
+
+game_menu()
 
 """
 bronvermeldingen:
